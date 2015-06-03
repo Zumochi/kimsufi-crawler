@@ -168,6 +168,10 @@ if __name__ == "__main__":
         _logger.warning("Selected crawler interval of %s seconds is less than "
                         "7.2, client may be rate-limited by OVH", CALLBACK_TIME)
 
+    # Notify the user of the (specified) timeouts
+    _logger.info("Crawler interval: %s", CALLBACK_TIME)
+    _logger.info("Request timeout: %s", REQUEST_TIMEOUT)
+
     # Init the crawler
     crawler = Crawler(state_change_callback=state_changed)
 
