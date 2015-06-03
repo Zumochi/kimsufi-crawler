@@ -56,3 +56,11 @@ docs/_build/
 
 # Private files
 config.json
+
+# Virtualenv
+include
+local
+pip-selfcheck.json
+
+# IDEA IDE's
+.idea
